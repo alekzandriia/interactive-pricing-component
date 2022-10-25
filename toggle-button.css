@@ -1,0 +1,48 @@
+/**** Toggle Button ****/
+
+/* hide the default HTML checkbox */
+.toggle input {
+    opacity: 0;s
+    width: 0;
+    height: 0;
+}
+
+/* size the area around the slider */
+.toggle {
+    position:relative;
+    display:inline-block;
+    min-width:3rem;
+    height:1.5rem;
+}
+
+/* slider background */
+.slider {
+    position:absolute;
+    cursor:pointer;
+    inset: 0;
+    background:#d0d8ea;
+    border-radius: 2rem;
+    transition: all 0.3s ease; /* To make the transform smooth */
+}
+
+/* slider switch */
+.slider:before {
+    position:absolute;
+    content: "";
+    height:1rem;
+    width:1rem;
+    inset:0.25rem;
+    background:white;
+    border-radius: 2rem;
+    transition: all 0.5s ease; /* To make the transform smooth */
+}
+
+/* slider functionality */
+input:checked + .slider:before {
+    transform: translateX(1.5rem);
+    
+}
+/* active state */
+.slider:hover {
+    background: #7aeade;
+}

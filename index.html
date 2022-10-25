@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="range-input.css">
+  <link rel="stylesheet" href="toggle-button.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <script src="scripts.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+  </header>
+<main>
+  <section class="price-range">
+    <div class="price-range-header">
+      <span class=" one pageviews"><span class="pageviews" id="pageviews">100K</span> Pageviews</span>
+      <span class = two><span id="ppm">$16.00</span> /month</span>
+    </div>
+    <input class = "three" type="range" id="drag" min="0" max="200" value="100" step="10">
+  </section>
+  <section class="pricing">
+    <span>Monthly Billing</span>
+    <label for="toggle" class="toggle">
+      <input type="checkbox" name="toggle" id="toggle">
+      <span class="slider"></span>
+    </label>
+    <span class="yearly">Yearly Billing</span>
+    <!-- <span class="discount">25% discount</span> -->
+  </section>
+  <footer>
+    <ul>
+      <li>Unlimited websites</li>
+      <li>100% data ownership</li>
+      <li>Email reports</li>
+    </ul>
+    <button>Start my trial</button>
+  </footer>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://alekz.dev">Alekzandriia</a>.
+  </div>
+
+</body>
+</html>

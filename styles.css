@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+/**** Desktop Styles ****/
+
+body {
+    background-color: #f9faff ;
+    background: url(images/pattern-circles.svg) no-repeat, url(images/bg-pattern.svg) no-repeat;
+    background-position: top, left;
+    background-size: 10rem, auto;
+    background-position-y: 10%, 0%;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: #9b9daa;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    height:100vh;
+    width:100vw;
+    align-content: space-around;
+    justify-content: center;
+    gap:5rem;
+    overflow:hidden;
+}
+
+h1 {
+    color:#293356;
+}
+
+h2 {
+    font-size:1rem;
+    font-weight: 600;
+}
+
+main {
+    font-size:0.75rem;
+    height:fit-content;
+    min-width: fit-content;
+    max-width:30rem;
+    background:white;
+    margin:0 auto;
+    border-radius: 0.5rem;
+    padding:2rem;
+    box-shadow: 1px 1px 20px #dfe1ea;
+}
+
+/**** main header section ****/
+
+.price-range {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+.price-range-header {
+    display:flex;
+    justify-content:space-between;
+}
+
+.pageviews {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+#ppm {
+    font-size:2rem;
+    color:#293356;
+    font-weight: 800;
+}
+
+.pricing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    font-size:0.75rem;
+    padding-left:5rem;
+}
+
+/* discount text */
+.yearly::after {
+    content: '25% Discount';
+    background: yellow;
+    border-radius:2rem;
+    padding:0.25rem;
+    color: #f0ac97;
+    background: #feeeea;
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+/**** footer of main ****/
+
+footer {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 0.5px solid #d0d8ea;
+    margin-top:2rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+button {
+    width:fit-content;
+    height:fit-content;
+    border-radius:4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border:none;
+    background: #293356;
+    color: #a4b0da;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    color:white;
+}
+
+li {
+    list-style: none;
+    line-height: 2rem;
+}
+li:before {
+    content: url(images/icon-check.svg);
+    padding-right:1rem;
+}
+
+/**** Mobile Styles ****/
+@media only screen and (max-width: 600px) {
+    .yearly::after {
+        content: '25%';
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap:1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        width:50%;
+        margin:auto;
+    }
+}
